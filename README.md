@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Food Service Industry (OOP in Java) <img src="https://user-images.githubusercontent.com/90864900/152653951-5ba48dee-204c-4687-8725-8faf602494d4.png" height=50 width=50>
+# Food Service Industry (OOD in Java) <img src="https://user-images.githubusercontent.com/90864900/152653951-5ba48dee-204c-4687-8725-8faf602494d4.png" height=50 width=50>
 A Java project that models parts of the food service industry.
 * We model places where customers can buy food: restaurants, food stands, and fast food.
 * We model the payment of bills, including sales tax and tip. 
