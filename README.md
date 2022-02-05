@@ -1,0 +1,2 @@
+# Food-Service-Industry-OOP-in-Java-
+A project that models parts of the food service industry. We model places where customers can buy food: restaurants, food stands, and fast food. We model the payment of bills, including sales tax and tip. We do not model many other things such as the food or menu. We also model a tax collector who collects both sales tax and income tax. We only model one year: the workers each have some income and pay tax for that year.
