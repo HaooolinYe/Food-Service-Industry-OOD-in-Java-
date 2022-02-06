@@ -2,11 +2,11 @@
 
 # Food Service Industry (OOD in Java) <img src="https://user-images.githubusercontent.com/90864900/152653951-5ba48dee-204c-4687-8725-8faf602494d4.png" height=50 width=50>
 An Object-Oriented-Design project written in Java which models parts of the food service industry.
-* We model places where customers can buy food: restaurants, food stands, and fast food.
-* We model the payment of bills, including sales tax and tip. 
-* We also model a tax collector who collects both sales tax and income tax. 
-* We only model one year: the workers each have some income and pay tax for that year.
-* We do not model many other things such as the food or menu.
+* I modeled places where customers can buy food: restaurants, food stands, and fast food.
+* I modeled the payment of bills, including sales tax and tip. 
+* I also modeled a tax collector who collects both sales tax and income tax. 
+* I only modeled one year: the workers each have some income and pay tax for that year.
+* I did not model many other things such as the food or menu.
 
 <img src="https://user-images.githubusercontent.com/90864900/152652880-dc3453da-bcb1-4728-8f2a-114a1dae8842.png">
 
