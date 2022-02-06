@@ -76,13 +76,13 @@ the owner of a FoodStand is a WorkingOwner which has a field targetTipPct
  
 ### Fast Food <img src="https://user-images.githubusercontent.com/90864900/152699314-871f8971-5314-4190-9ee2-ec089dba266a.png" height=45 width=45>
 The FastFood class extends <a href="#fp">FoodPlace</a>. It has the following methods:
-* a constructor FastFood – sets the fieldsThe Staff list field contains a shallow copy of the Staff list argument.
-* workShift() – returns nothing (void) ; it models that the owner pays each staff an hourly
+* a <strong>constructor FastFood</strong> – sets the fieldsThe Staff list field contains a shallow copy of the Staff list argument.
+* <strong>workShift()</strong> – returns nothing (void) ; it models that the owner pays each staff an hourly
 wage. The method adds an amount to each of the staff’s incomes, and it adds these amounts to the
 owner’s total salary expenses.
-* getIncomeTaxPayers() – returns a shallow copy of the ArrayList that includes the owner
+* <strong>getIncomeTaxPayers()</strong> – returns a shallow copy of the ArrayList that includes the owner
 and all the staff in a random order.
-* distributeIncomeAndSalesTax() – returns nothing (void); in all fastfood places, the menu
+* <strong>distributeIncomeAndSalesTax()</strong> – returns nothing (void); in all fastfood places, the menu
 price is an income for the owner. It is also possible to have tips, but the tip only depends on the
 customer. The tip is split equally between all the staff (which does not include the owner).
 <p align="right">(<a href="#top">↑Top</a>)</p>
@@ -93,8 +93,8 @@ customer. The tip is split equally between all the staff (which does not include
  
 ### IncomeTaxPayer <img src="https://user-images.githubusercontent.com/90864900/152699856-c8c281ac-b791-4aa8-99dc-8bcfe0f396e1.png" height=45 width=45>
 This is an abstract class. It has the following methods:
-* constructor IncomeTaxPayer() – assigns a uniqueID to this income tax payer.
-* equals() – returns true if the argument is indeed an IncomeTaxPayer and if the id’s match,
+* a constructor <strong>IncomeTaxPayer()</strong> – assigns a uniqueID to this income tax payer.
+* <strong>equals()</strong> – returns true if the argument is indeed an IncomeTaxPayer and if the id’s match,
 and otherwise returns false. Two IncomeTaxPayers might have the same name, but they
 are guaranteed to have different id’s.
 <p align="right">(<a href="#top">↑Top</a>)</p>
@@ -105,13 +105,17 @@ are guaranteed to have different id’s.
  
 ### Staff <img src="https://user-images.githubusercontent.com/90864900/152700093-de84cdec-d246-4a94-8765-fdaeaab264ef.png" height=40 width=65>
 Staff is a class which extends <a href="#itp">IncomeTaxPayer</a>. It has the following methods:
-* a constructor Staff – the salaryPerHour is determined by the parameter isCook: a cook is
+* a <strong>constructor Staff</strong> – the salaryPerHour is determined by the parameter isCook: a cook is
 paid $20 per hour and otherwise a staff is paid $10 per hour.
-* workHours() – returns the amount of money earned by that staff, and modifies that staff’s
+* <strong>workHours()</strong> – returns the amount of money earned by that staff, and modifies that staff’s
 income.
 The parameter of this method is the number of hours worked in a shift; whenever a staff works this
 number of hours, the staff’s income increases; this method will be called in the different implementations
-of FoodPlace.workShift() method. This method is both a mutator and an accessor,
+ of FoodPlace.workShift() method. This method is both a mutator and an accessor,
 namely it changes a field in the staff object and it also returns the amount of money earned by that
 staff.
-* calculateIncomeTax() – all staff pay 25% income tax.
+  * <strong>calculateIncomeTax()</strong> – all staff pay 25% income tax.
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
