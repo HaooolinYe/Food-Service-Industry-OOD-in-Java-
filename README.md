@@ -31,6 +31,7 @@ match; otherwise, it returns false
 
 <p align="right">(<a href="#top">↑Top</a>)</p>
 </div>
+
 ---------------------------------------------------------------------------
 <div id="res">
  
@@ -54,6 +55,7 @@ the total sales tax is accumulated as well.
 
 <p align="right">(<a href="#top">↑Top</a>)</p>
 </div>
+
 ---------------------------------------------------------------------------
 <div id="fs">
  
@@ -68,8 +70,8 @@ adding the menu price and the tip; it also updates the total sales tax.
 the owner of a FoodStand is a WorkingOwner which has a field targetTipPct
  <p align="right">(<a href="#top">↑Top</a>)</p>
  </div>
- ---------------------------------------------------------------------------
  
+ ---------------------------------------------------------------------------
  <div id="ff">
  
 ### Fast Food <img src="https://user-images.githubusercontent.com/90864900/152699314-871f8971-5314-4190-9ee2-ec089dba266a.png" height=45 width=45>
