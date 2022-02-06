@@ -92,10 +92,26 @@ customer. The tip is split equally between all the staff (which does not include
  <div id="itp">
  
 ### IncomeTaxPayer <img src="https://user-images.githubusercontent.com/90864900/152699856-c8c281ac-b791-4aa8-99dc-8bcfe0f396e1.png" height=45 width=45>
- This is an abstract class. It has the following methods:
+This is an abstract class. It has the following methods:
 * constructor IncomeTaxPayer() – assigns a uniqueID to this income tax payer.
 * equals() – returns true if the argument is indeed an IncomeTaxPayer and if the id’s match,
 and otherwise returns false. Two IncomeTaxPayers might have the same name, but they
 are guaranteed to have different id’s.
 <p align="right">(<a href="#top">↑Top</a>)</p>
 </div>
+
+ ---------------------------------------------------------------------------
+ <div id="staff">
+ 
+### Staff <img src="https://user-images.githubusercontent.com/90864900/152700093-de84cdec-d246-4a94-8765-fdaeaab264ef.png" height=40 width=65>
+Staff is a class which extends <a href="#itp">IncomeTaxPayer</a>. It has the following methods:
+* a constructor Staff – the salaryPerHour is determined by the parameter isCook: a cook is
+paid $20 per hour and otherwise a staff is paid $10 per hour.
+* workHours() – returns the amount of money earned by that staff, and modifies that staff’s
+income.
+The parameter of this method is the number of hours worked in a shift; whenever a staff works this
+number of hours, the staff’s income increases; this method will be called in the different implementations
+of FoodPlace.workShift() method. This method is both a mutator and an accessor,
+namely it changes a field in the staff object and it also returns the amount of money earned by that
+staff.
+* calculateIncomeTax() – all staff pay 25% income tax.
