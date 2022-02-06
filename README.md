@@ -88,7 +88,14 @@ customer. The tip is split equally between all the staff (which does not include
 <p align="right">(<a href="#top">↑Top</a>)</p>
 </div>
 
-#### IncomeTaxPayer
-<img src="https://user-images.githubusercontent.com/90864900/152699257-346eb547-660b-4756-8d62-ebf61a0b58b0.png" height=45 width=45>
-
+ ---------------------------------------------------------------------------
+ <div id="itp">
+ 
+### IncomeTaxPayer <img src="https://user-images.githubusercontent.com/90864900/152699856-c8c281ac-b791-4aa8-99dc-8bcfe0f396e1.png" height=45 width=45>
+ This is an abstract class. It has the following methods:
+* constructor IncomeTaxPayer() – assigns a uniqueID to this income tax payer.
+* equals() – returns true if the argument is indeed an IncomeTaxPayer and if the id’s match,
+and otherwise returns false. Two IncomeTaxPayers might have the same name, but they
+are guaranteed to have different id’s.
 <p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
