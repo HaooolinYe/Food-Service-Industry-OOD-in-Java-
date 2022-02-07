@@ -103,7 +103,7 @@ are guaranteed to have different id’s.
  ---------------------------------------------------------------------------
  <div id="staff">
  
-### Staff <img src="https://user-images.githubusercontent.com/90864900/152700093-de84cdec-d246-4a94-8765-fdaeaab264ef.png" height=40 width=65>
+### Staff <img src="https://user-images.githubusercontent.com/90864900/152700093-de84cdec-d246-4a94-8765-fdaeaab264ef.png" height=30 width=50>
 Staff is a class which extends <a href="#itp">IncomeTaxPayer</a>. It has the following methods:
 * a <strong>constructor Staff</strong> – the salaryPerHour is determined by the parameter isCook: a cook is
 paid $20 per hour and otherwise a staff is paid $10 per hour.
@@ -115,6 +115,38 @@ number of hours, the staff’s income increases; this method will be called in t
 namely it changes a field in the staff object and it also returns the amount of money earned by that
 staff.
   * <strong>calculateIncomeTax()</strong> – all staff pay 25% income tax.
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
+<div id="server">
+ 
+### Server <img src="https://user-images.githubusercontent.com/90864900/152831666-a60b6fab-94c0-4f05-815a-b37b41975069.png" height=43 width=43>
+Server is a class which extends <a href="#staff">Staff</a>. (Restaurant is the only FoodPlace that has Server's.) It contains one method:
+* a <strong>constructor Server()</strong> – a Server is a Staff and in particular a Server is not a
+cook.
+Each server (and cook) receives a tip from each Customer as part of the check – see the <a href="#res">Restaurant</a>’s <a href="#res">distributeIncomeAndSalesTax()</a>
+method. The tip is calculated by the Customer.dineAndPayCheck() method:
+the tip depends on both the Server (e.g. their skill and friendliness) and on the Customer (whether they are
+generous or not), namely the final tip percentage is the average of the target tip percentages of the Server
+and the Customer.
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
+ <div id="owner">
+ 
+### Owner <img src="https://user-images.githubusercontent.com/90864900/152857898-1b728275-0a99-44aa-8452-b52a0577e061.png" height=43 width=43>
+The Owner class extends IncomeTaxPayer. It contains the following methods:
+ * a <strong>constructor Owner()</strong> – sets the name of this owner (owner inherits its
+name field from its superclass)
+ * <strong>calculateIncomeTax()</strong> – returns the amount of tax that the owner needs to pay, based on
+the owner’s income and expenses. The owner’s income is the sum of the menu prices on all the
+customer’s checks. The owner’s expenses are the hourly wages paid to the staff (salaryExpenses),
+and certain fixed costs (fixedCosts) for running the restaurant (e.g. maintenance, equipment, food
+supplies, etc) which aren't modeled in detail. The owner’s income tax is 10 percent of the difference
+of the income and the expenses, assuming the income is greater than the expenses; if the
+income is less than the expenses, then the income tax is zero rather than negative.
 <p align="right">(<a href="#top">↑Top</a>)</p>
 </div>
 
