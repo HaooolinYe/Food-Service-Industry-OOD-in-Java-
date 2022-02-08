@@ -167,6 +167,18 @@ name field) as well as the targetTipPct field.
  <div id="ck">
  
  ### Check<img src="https://user-images.githubusercontent.com/90864900/153055894-2bca56ee-20c8-41c9-ae3c-271ba18dd310.png" height=45 width=45>
+ Check models a customer’s payment. It is used to specify the menu price, sales tax, and tip. It contains these methods:
+* a <strong>constructor</strong> – sets the field values; in particular, the sales tax is 15% of the menu price;
+* <strong>setTipByPct()</strong> – returns nothing (void); This setter method has one parameter which is
+the tip percentage; it sets the tip to be that percentage of the menuPrice. Note that percentage is a
+value between 0 and 100.
+ <p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
+ <div id="cus">
+ 
+ ### Customer<img src="https://user-images.githubusercontent.com/90864900/153057654-6c9c9594-5ba1-42be-b111-2cf165ff57b8.png" height=45 width=45>
 It contains two methods:
 * a <strong>constructor Customer()</strong> – there are two parameters: the name (this is the only place where
 the customer identity is used) and the targetTipPct (this is the tip percentage that this customer give
