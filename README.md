@@ -167,3 +167,25 @@ name field) as well as the targetTipPct field.
  <div id="ck">
  
  ### Check<img src="https://user-images.githubusercontent.com/90864900/153055894-2bca56ee-20c8-41c9-ae3c-271ba18dd310.png" height=45 width=45>
+It contains two methods:
+* a <strong>constructor Customer()</strong> – there are two parameters: the name (this is the only place where
+the customer identity is used) and the targetTipPct (this is the tip percentage that this customer give
+for their expected level of service; the tip is determined by the Customer in its dineAndPayCheck
+method – see next)
+ * <strong>dineAndPayCheck()</strong> – returns nothing (void); the details of this method are given below.
+ <t>The idea of the dineAndPayCheck() method is that a customer visits a FoodPlace, eats, and pays the
+check. The tip calculation and the way the payment is distributed depends on the FoodPlace. Specifically,
+the method does the following:
+1. construct a new check;
+2. calculate the tip: The tip percentage is the average of a target tip for that customer and the Food-
+Place’s tip percentage returned by the getTipPercentage() method of the FoodPlace. For example,
+a customer might have a target tip of 10% and the food place might have a target tip of 20%, and
+in this case the customer would tip the average, namely 15%. Another example is a customer with
+15% tip percentage who goes to a FastFood place like McDonalds; the FastFood tip percentage is
+0 % and so the customer would only give 7.5% tip percentage on the check. These target tips are
+fields within the Customer and Foodplace objects. Hint: the method Check.setTipByPct() should be
+called here.
+3. distribute earnings of this check: the owner gets an income contribution of the menu price; the tip
+is distributed according to the FoodPlace’s class policy; the sales tax is set aside for the tax collector.
+This procedure is done with the FoodPlace.distributeEarnings() method. [update: Should be
+FoodPlace.distributeIncomeAndSalesTax() method]
