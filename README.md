@@ -137,7 +137,7 @@ and the Customer.
  <div id="owner">
  
 ### Owner <img src="https://user-images.githubusercontent.com/90864900/152857898-1b728275-0a99-44aa-8452-b52a0577e061.png" height=43 width=43>
-The Owner class extends IncomeTaxPayer. It contains the following methods:
+The Owner class extends <a href="#itp">IncomeTaxPayer</a>. It contains the following methods:
  * a <strong>constructor Owner()</strong> – sets the name of this owner (owner inherits its
 name field from its superclass)
  * <strong>calculateIncomeTax()</strong> – returns the amount of tax that the owner needs to pay, based on
@@ -151,3 +151,19 @@ income is less than the expenses, then the income tax is zero rather than negati
 </div>
 
  ---------------------------------------------------------------------------
+<div id="wo">
+ 
+ ### Working Owner <img src="https://user-images.githubusercontent.com/90864900/153055406-8353f3c1-67b6-4718-8ff6-9c6f2bfd28f6.png" height=45 width=45>
+ WorkingOwner extends <a href="#owner">Owner</a>. In our model, the only WorkingOwners are the owners of <a href="#fs">FoodStands</a>.
+WorkingOwners are different from general <a href="#owner">Owner</a> in that working owners get tips. An example of a
+WorkingOwner would be a hot dog stand owner.<br>
+It contains just one method:
+ * a <strong>constructor WorkingOwner()</strong> – sets the name (WorkingOwner inherits its
+name field) as well as the targetTipPct field.
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
+ <div id="ck">
+ 
+ ### Check<img src="https://user-images.githubusercontent.com/90864900/153055894-2bca56ee-20c8-41c9-ae3c-271ba18dd310.png" height=45 width=45>
