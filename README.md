@@ -189,3 +189,16 @@ called here.
 is distributed according to the FoodPlace’s class policy; the sales tax is set aside for the tax collector.
 This procedure is done with the FoodPlace.distributeEarnings() method. [update: Should be
 FoodPlace.distributeIncomeAndSalesTax() method]
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
+ <div id="tc">
+  
+  ### TaxCollector<img src="https://user-images.githubusercontent.com/90864900/153056883-ee9946bf-4e4e-4d2a-bc37-01a11fc97ed5.png" height=45 width=45>
+  It contains the following methods:
+* a <strong>constructor</strong> TaxCollector - assigns the food place list.
+* <strong>collectTax()</strong> – returns nothing (void); for each FoodPlace in the list of all FoodPlace’s,
+the sales tax is collected and the income taxes from all IncomeTaxPayer’s are collected, and these
+values are added to the incomeTaxCollected and salesTaxCollected fields.
+  
