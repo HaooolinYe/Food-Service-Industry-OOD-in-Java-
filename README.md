@@ -11,6 +11,20 @@ An Object-Oriented-Design project written in Java which models parts of the food
 <img src="https://user-images.githubusercontent.com/90864900/152652880-dc3453da-bcb1-4728-8f2a-114a1dae8842.png">
 
 ## Classes <img src="https://user-images.githubusercontent.com/90864900/152654045-ceb55752-3068-4a72-8d8f-afc8e36a3acb.png" height=45 width=45>
+<h2>List of Classes</h2>
+
+* <a href="#fp">FoodPlace</a>
+* <a href="#res">Restaurant</a>
+* <a href="#fs">Food Stand</a>
+* <a href="#ff">Fast Food</a>
+* <a href="#itp">Income Tax Payer</a>
+* <a href="#staff">Staff</a>
+* <a href="#server">Server</a>
+* <a href="#owner">Owner</a>
+* <a href="#ck">Check</a>
+* <a href="#cus">Custumer</a>
+* <a href="#tc">Tax Collector</a>
+     
 <div id="fp">
  
 ### FoodPlace (Abstract  Class) <img src="https://user-images.githubusercontent.com/90864900/152698171-083716c9-aef7-4104-b4bd-cffd112895a2.png" height=45 width=45>
@@ -188,9 +202,9 @@ method – see next)
  <t>The idea of the dineAndPayCheck() method is that a customer visits a FoodPlace, eats, and pays the
 check. The tip calculation and the way the payment is distributed depends on the FoodPlace. Specifically,
 the method does the following:
-1. construct a new check;
-2. calculate the tip: The tip percentage is the average of a target tip for that customer and the Food-
-Place’s tip percentage returned by the getTipPercentage() method of the FoodPlace. For example,
+  1. construct a new <a href="#ck">check</a>;
+2. calculate the tip: The tip percentage is the average of a target tip for that customer and the <a href="#fp">Food
+  Place</a>’s tip percentage returned by the getTipPercentage() method of the FoodPlace. For example,
 a customer might have a target tip of 10% and the food place might have a target tip of 20%, and
 in this case the customer would tip the average, namely 15%. Another example is a customer with
 15% tip percentage who goes to a FastFood place like McDonalds; the FastFood tip percentage is
@@ -213,4 +227,7 @@ FoodPlace.distributeIncomeAndSalesTax() method]
 * <strong>collectTax()</strong> – returns nothing (void); for each FoodPlace in the list of all FoodPlace’s,
 the sales tax is collected and the income taxes from all IncomeTaxPayer’s are collected, and these
 values are added to the incomeTaxCollected and salesTaxCollected fields.
-  
+<p align="right">(<a href="#top">↑Top</a>)</p>
+</div>
+
+ ---------------------------------------------------------------------------
